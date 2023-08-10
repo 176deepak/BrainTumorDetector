@@ -36,6 +36,8 @@ class ModelTrainer:
             )
             os.remove(r"E:\Projects\Tumor_Detector\yolov8n.pt")
 
+            shutil.rmtree(r"runs")
+
             model_trainer_artifact = ModelTrainerArtifact(
                 trained_model_file_path="artifacts/model_trainer/best.pt"
             )

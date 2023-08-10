@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tumor Detector</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'CSS/style.css')}}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div>
+                <h1>Brain Tumor Detector</h1>
+            </div>
+        </div>
+        <div class="main">
+            <div class="img">
+                <img src="{{url_for('static', filename=path)}} " alt="detection-result-image">            
+            </div>
+        </div>
+    </div>
+</body>
+</html>

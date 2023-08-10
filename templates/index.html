@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Tumor Detector</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'CSS/style.css')}}">
+    <script src="{{url_for('static', filename = 'javascript/script.js')}}"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div>
+                <h1>Brain Tumor Detector</h1>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="form">
+                <form action="", method="post" enctype="multipart/form-data">
+                    <div class="input">
+                        <div>
+                            <img id="uploadPreview" style="width: 350px;"/>
+                        </div>
+                        <div>
+                            <input id="uploadImage" type="file" name="myPhoto" accept="image/*" onchange="PreviewImage();"/>
+                            <br/>
+                            <button id="button1" class="button" type="submit">Detect in Image</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div>
+                <div><a href=""><img src="" alt=""></a></div>
+                <div><a href=""><img src="" alt=""></a></div>
+                <div><a href=""><img src="" alt=""></a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
